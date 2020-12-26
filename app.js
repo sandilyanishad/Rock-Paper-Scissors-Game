@@ -53,6 +53,9 @@ function frontend_changes(user, bot, res, pair) {
     var textNode = document.createTextNode(res.statement);
     textDiv.appendChild(textNode);
     textDiv.style.color = res.color;
+    textDiv.style.fontSize = '2em';
+    textDiv.style.margin = '20px 0';
+    textDiv.style.padding = '20px';
     document.querySelector('.picks').appendChild(textDiv);
     var i1_user = new Image();
     i1_user.src = imageDB[user];
