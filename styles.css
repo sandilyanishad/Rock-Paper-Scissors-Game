@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Ewert&family=IBM+Plex+Mono:ital@1&display=swap');
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game_box{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    border: rgb(80, 146, 132) solid ;
+    border-radius: 10px;
+    margin: 30px;
+}
+.game_box .heading{
+    padding: 10px;
+    font-family: 'Ewert', cursive;
+    color: rgb(95, 95, 95);
+    text-align: center;
+}
+.game_box .picks{
+    padding: 10px;
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: rgb(60, 129, 124) solid ;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.game_box .picks div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ewert', cursive;
+}
+.game_box .picks img{
+    display: flex;
+    max-width: 150px;
+    min-width: 50px;
+    margin: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.game_box .picks img:hover{
+    
+    box-shadow: 2px 2px 25px rgb(155, 155, 155);
+    border-radius: 10px;
+    transform: rotate(0deg);
+    animation: wiggle 500ms ease 1;
+}
+.game_box .results{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+@keyframes wiggle{
+    25%{
+        transform: rotate(5deg);
+        transform: scale(1.2);
+    }
+    50%{
+        transform: rotate(-15deg);
+    }
+}
